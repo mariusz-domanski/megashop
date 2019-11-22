@@ -100,7 +100,7 @@ Główny podział:
 
 ### Frontend
 
-* Angular 6+ (preferowane 8)
+* Angular 7+ (preferowane 8)
 * Scss
 * Bootstrap 4+
 
