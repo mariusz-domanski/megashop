@@ -1,6 +1,6 @@
 # Orientacyjna struktura katalogów
 
-* **_project** - dokumenty dot. projektu (projektu graficzne, specyfikacja itd)
+* **\_project** - dokumenty dot. projektu (projektu graficzne, specyfikacja itd)
 * **node_modules**
 * **src** - katalog główny aplikacji
     * **app**
@@ -9,9 +9,9 @@
             * **product-card**
             * **side-menu**
         * **services**
-            * ***api***
-            * ***articles***
-            * ***products***
+            * *api*
+            * *articles*
+            * *products*
         * **views**
             * **article**
             * **basket**
