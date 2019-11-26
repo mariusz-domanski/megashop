@@ -7,7 +7,8 @@ Projekt założony w celu nauki podstaw programowania serwisów www.
 * Bootstrap 4.3,
 * Angular 7/8,
 * Scss,
-* PHP 7.3.
+* PHP 7.3,
+* Symfony 3.*
 
 ## Opis projektu
 
