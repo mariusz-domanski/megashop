@@ -8,7 +8,7 @@ Projekt założony w celu nauki podstaw programowania serwisów www.
 * Angular 7/8,
 * Scss,
 * PHP 7.3,
-* Symfony 3.*
+* Symfony 3.*.
 
 ## Opis projektu
 
