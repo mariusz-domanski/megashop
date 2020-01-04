@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Megashop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+<header>
+    <div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm">
+        <a class="text-clipped navbar-brand" href="#">
+            <i class="fal fa-store d-flex"><span class="m-auto"> Megashop</span></i>
+        </a>
+
+        <div class="main-nav-outer d-flex">
+            <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+            <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+            <ul class="navbar-nav d-flex">   
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Startowa</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 1</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 2</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 3</a>
+                </li>       
+            
+            </ul>
+
+            </nav>
+        </div>
+
+        <div class="nav-icons-container d-flex justify-content-between">
+            <div class="nav-icons">
+                <a  href="">
+                    <i class="fal fa-search text-clipped"></i>
+                </a>
+            </div>
+            <div class="nav-icons">
+                <a href="">
+                    <i class="fal fa-shopping-bag bag-item-count text-clipped"></i>
+                    <span class="badge">2</span>
+                </a>
+            </div>
+            <div class="nav-icons">
+               <div class="dropdown">
+                    <a class="dropdown-toggle " href="" data-toggle="dropdown">
+                            <i class="fal fa-user text-clipped"></i>
+                    </a> 
+                    <div class="dropdown-menu ">
+                        <form action="" class="p-2 text-secondary">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Podaj adres e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Wpisz hasło" required>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                <label class="form-check-label" for="dropdown-checkbox">Zapamiętaj mnie</label>
+                            </div>
+                            <button type="submit" class="btn btn-bg my-2">Zaloguj</button>
+                        </form>
+                        <div class="dropdown-divider mt-0">
+                          
+                        </div>
+                        <a class="dropdown-item" href="#">Nie masz konta? Zarejestruj się</a>
+                        <a class="dropdown-item" href="#">Zapomniałeś hasła? Przypomnij hasło</a>
+                    </div>    
+               </div>
+                
+            </div>
+            <div class="nav-icons d-lg-none">
+                
+                    <i class="fal fa-bars open-menu-icon text-clipped"></i>
+                               
+            </div>
+        </div>
+    </div>
+
+<!-- start darmowa dostawa -->
+<div class="promowane text-white text-center py-2 mb-5">
+<span>
+    <span class="text-uppercase font-weight-bold">Darmowa dostawa</span> dla zamówień powyżej 200 zł.
+</span>
+
+</div>
+
+<!-- koniec darmowa dostawa-->
+
+<!-- start slider-->
+
+<div class="container">
+    <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="carousel-indicators" data-slide-to="0"></li>
+            <li data-target="carousel-indicators" data-slide-to="1"></li>
+            <li data-target="carousel-indicators" data-slide-to="2"></li>
+
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                    <img class="img-fluid d-md-none" src="images/carousel/carousel-img-1-mobile.jpeg" alt="">
+                    <img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-1.jpeg" alt="">
+                </a>
+            </div>
+        
+
+       
+                <div class="carousel-item">
+                    <a href="#">
+                        <img class="img-fluid d-md-none" src="images/carousel/carousel-img-2-mobile.jpg" alt="">
+                        <img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-2.jpg" alt="">
+                    </a>
+                </div>
+           
+        
+         
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-md-none" src="images/carousel/carousel-img-3-mobile.jpeg" alt="">
+                            <img class="img-fluid d-none d-md-block" src="images/carousel/carousel-img-3.jpeg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+
+                <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                        <i class="fal fa-chevron-left text text-clipped"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                            <i class="fal fa-chevron-right text text-clipped"></i>
+                        </a>
+            
+    </div>
+    
+</div>
+
+
+<!-- koniec slider -->
+
+
+</header>
+<!-- koniec header -->
+
+<!-- start marki -->
+<section class="featured-brands">
+<div class="container">
+    <div class="row align-items-center text-center">
+        <div class="col-12 col-md-4 ">
+            <a href="#">
+                <img src="images/brands/owocowe.svg" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-md-4 ">
+            <a href="#">
+                <img src="images/brands/warzywne.svg" alt="">
+            </a>
+        </div>
+        <div class="col-12 col-md-4 ">
+            <a href="#">
+                <img src="images/brands/mieszane.svg" alt="">
+            </a>
+        </div>
+       
+        
+    </div>
+</div>
+</section>
+<!-- koniec marki -->
+
+<!-- start produkty polecane -->
+<section class="polecane pt-0">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <h1 class="text-clipped text-uppercase">Polecane produkty</h1>
+            <p class="text-seconday">Wybierz najlepsze soki</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6  hero-img">
+                <a href="#">
+                    <img src="images/hero/hero1.jpg" alt="">
+                </a>
+                <div class="mt-2">
+                    <a href="#"><span class="text-uppercase font-weight-bold">Produkt 1</span><br>
+                    <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6  hero-img">
+                    <a href="#">
+                        <img src="images/hero/hero2.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#"><span class="text-uppercase font-weight-bold">Produkt 1</span><br>
+                        <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  hero-img">
+                        <a href="#">
+                            <img src="images/hero/hero3.jpg" alt="">
+                        </a>
+                        <div class="mt-2">
+                            <a href="#"><span class="text-uppercase font-weight-bold">Produkt 1</span><br>
+                            <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 hero-img">
+                            <a href="#">
+                                <img src="images/hero/hero4.jpg" alt="">
+                            </a>
+                            <div class="mt-2">
+                                <a href="#"><span class="text-uppercase font-weight-bold">Produkt 1</span><br>
+                                <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </div>
+        </div>
+    </div>
+</section>
+
+<!-- koniec produkty polecane -->
+
+
+
+<!-- start najczesciej_kupowane -->
+<section class="arrivals">
+    <div class="container">
+        <div class="section-heading text-center mb-5">
+            <h1 class="text-clipped text-uppercase">PRODUKTY NAJCZĘŚCIEJ KUPOWANE PRZEZ KLIENTÓW</h1>
+            <p class="text-seconday">Wybierz najlepsze soki</p>
+        </div> 
+        <div class="row text-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="new-arrival-img mb-3 ">
+                    <img src="images/produkty/produkt1.jpg" alt="">
+                </div>
+                <a href="#">
+                    <span class="text-uppercase font-weight-bold">nazwa</span><br>
+                    <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="new-arrival-img mb-3 ">
+                    <img src="images/produkty/produkt2.jpg" alt="">
+                </div>
+                <a href="#">
+                    <span class="text-uppercase font-weight-bold">nazwa</span><br>
+                    <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="new-arrival-img mb-3 ">
+                    <img src="images/produkty/produkt3.jpg" alt="">
+                </div>
+                <a href="#">
+                    <span class="text-uppercase font-weight-bold">nazwa</span><br>
+                    <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="new-arrival-img mb-3 ">
+                    <img src="images/produkty/produkt4.jpg" alt="">
+                </div>
+                <a href="#">
+                    <span class="text-uppercase font-weight-bold">nazwa</span><br>
+                    <span>Kup teraz</span> <i class="fas fa-caret-right"></i>
+                </a>
+            </div>
+           
+            
+        </div>
+    </div>
+</section>
+
+<!-- koniec najczesciej_kupowane -->
+
+
+
+
+<!-- start usługi -->
+<section class="our-services">
+    <div class="container">
+        
+        <div class="row text-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                <div class="our-services-icon d-flex mb-3 mx-auto ">
+                    <i class="fal fa-shipping-fast text-clipped m-auto"></i>
+                </div>
+                <div class="our-services-description">
+                    <h5 class="text-uppercase font-weight-bold">Darmowa dostawa</h5>
+                    <p>Darmowa dostawa dla dostaw powyżej 200 zł</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto ">
+                        <i class="fal fa-sync text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">Zwrot gwarantowany</h5>
+                        <p>Zwrot towaru do 30 dni</p>
+                    </div>
+    
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
+                        <div class="our-services-icon d-flex mb-3 mx-auto ">
+                            <i class="fal fa-headset text-clipped m-auto"></i>
+                        </div>
+                        <div class="our-services-description">
+                            <h5 class="text-uppercase font-weight-bold">Obsługa 24/7</h5>
+                            <p>Infolinia czynna 24h na dobę </p>
+                        </div>
+        
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-5">
+                            <div class="our-services-icon d-flex mb-3 mx-auto ">
+                                <i class="fal fa-credit-card text-clipped m-auto"></i>
+                            </div>
+                            <div class="our-services-description">
+                                <h5 class="text-uppercase font-weight-bold">Bezpieczne płatności</h5>
+                                <p>Używamy szyfrowanych połączeń</p>
+                            </div>
+            
+                        </div>
+
+            
+            </div>
+            </div>
+</section>
+<!-- koniec usługi -->
+
+
+
+<!-- start footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <address>
+                    <strong class="h3 font-weight-normal">Megashop</strong><br>
+                    ul. Testowa 23/43<br>
+                    11-123 Bydgoszcz<br>
+                    Tel.: +48 234 543 123
+                </address>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-title">
+                    <h5>Nasza misja</h5>
+                    <span class="custom-border"></span>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="footer-title">
+                    <h5>Usługi</h5>
+                    <span class="custom-border"></span>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                    <li>
+                        <a class="footer-link"href="#">Lorem</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr class="mt-5">
+            <div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+
+                <div class="order-2">
+                    <a class="footer-link" href="#">Link</a>
+                    <a class="footer-link ml-3" href="#">Link</a>
+                    <a class="footer-link ml-3" href="#">Link</a>
+                </div>
+                <div>
+                        <p class="m-0 text-sm order-1">
+                                &copy; 2019 Megashop. All rights reserved.
+                            </p>
+                </div>
+               
+            </div>
+        
+
+
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>

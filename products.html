@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Megashop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+<header>
+    <div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm">
+        <a class="text-clipped navbar-brand" href="#">
+            <i class="fal fa-store d-flex"><span class="m-auto">Megashop</span></i>
+        </a>
+
+        <div class="main-nav-outer d-flex">
+            <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+            <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+            <ul class="navbar-nav d-flex">   
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Startowa</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 1</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 2</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#">Menu 3</a>
+                </li>       
+            
+            </ul>
+
+            </nav>
+        </div>
+
+        <div class="nav-icons-container d-flex justify-content-between">
+            <div class="nav-icons">
+                <a  href="">
+                    <i class="fal fa-search text-clipped"></i>
+                </a>
+            </div>
+            <div class="nav-icons">
+                <a href="">
+                    <i class="fal fa-shopping-bag bag-item-count text-clipped"></i>
+                    <span class="badge">2</span>
+                </a>
+            </div>
+            <div class="nav-icons">
+               <div class="dropdown">
+                    <a class="dropdown-toggle " href="" data-toggle="dropdown">
+                            <i class="fal fa-user text-clipped"></i>
+                    </a> 
+                    <div class="dropdown-menu ">
+                        <form action="" class="p-2 text-secondary">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Podaj adres e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Wpisz hasło" required>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                <label class="form-check-label" for="dropdown-checkbox">Zapamiętaj mnie</label>
+                            </div>
+                            <button type="submit" class="btn btn-bg my-2">Zaloguj</button>
+                        </form>
+                        <div class="dropdown-divider mt-0">
+                          
+                        </div>
+                        <a class="dropdown-item" href="#">Nie masz konta? Zarejestruj się</a>
+                        <a class="dropdown-item" href="#">Zapomniałeś hasła? Przypomnij hasło</a>
+                    </div>    
+               </div>
+                
+            </div>
+            <div class="nav-icons d-lg-none">
+                
+                    <i class="fal fa-bars open-menu-icon text-clipped"></i>
+                               
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+
+<section class="my-cart p-0">
+    <div class="heading-has-bg d-flex">
+        <div class="container text-left align-self-center">
+            <h1 class="text-uppercase">Produkty</h1>
+        </div>
+    </div>
+
+
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-produkty text-white text-uppercase"><i class="fa fa-list"></i> Kategorie</div>
+                    <ul class="list-group category_block">
+                        <li class="list-group-item"><a href="#">Owocowe</a></li>
+                        <li class="list-group-item"><a href="#">Warzywne</a></li>
+                        <li class="list-group-item"><a href="#">Mieszane</a></li>
+                    </ul>
+                </div>
+             
+            </div>
+            <div class="col">
+                <div class="row  mb-3">
+                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="dropdown show">
+                        <a class="btn btn-sort" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sortuj
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Cena: od najniższej</a>
+                          <a class="dropdown-item" href="#">Cena: od najwyższej</a>
+                          <a class="dropdown-item" href="#">Objetość: od najniższej</a>
+                          <a class="dropdown-item" href="#">Objetość:: od najwyższej</a>
+                          <a class="dropdown-item" href="#">Popularność: od najniższej</a>
+                          <a class="dropdown-item" href="#">Popularność: od najwyższej</a>
+                        
+                        </div>
+                      </div>
+
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-right">Ilość produktów: 123</div>
+
+
+
+             </div>
+                <div class="row">
+
+
+
+
+                   
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 5zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt2.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 5zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt3.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 4,6zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt4.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 6zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt5.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 2zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/produkty/produkt6.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="product.html" title="Zobacz produkt">Nazwa produktu</a></h4>
+                                <p class="card-text"><b>Cena: 7,5zł</b><br>Producent: Hortex<br>Kategoria: Sok owocowy</p>
+                                <div class="row">
+                                 
+                                    <div class="col">
+                                        <a href="#" class="btn btn-kup btn-block">Dodaj do koszyka</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Poprzednie</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Następne</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- start footer -->
+<footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <address>
+                        <strong class="h3 font-weight-normal">Megashop</strong><br>
+                        ul. Testowa 23/43<br>
+                        11-123 Bydgoszcz<br>
+                        Tel.: +48 234 543 123
+                    </address>
+                </div>
+    
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Nasza misja</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Usługi</h5>
+                        <span class="custom-border"></span>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                        <li>
+                            <a class="footer-link"href="#">Lorem</a>
+                        </li>
+                    </ul>
+    
+                </div>
+    
+                <hr class="mt-5">
+                <div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+    
+                    <div class="order-2">
+                        <a class="footer-link" href="#">Link</a>
+                        <a class="footer-link ml-3" href="#">Link</a>
+                        <a class="footer-link ml-3" href="#">Link</a>
+                    </div>
+                    <div>
+                            <p class="m-0 text-sm order-1">
+                                    &copy; 2019 Megashop. All rights reserved.
+                                </p>
+                    </div>
+                   
+                </div>
+            
+    
+    
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
+    </html>
