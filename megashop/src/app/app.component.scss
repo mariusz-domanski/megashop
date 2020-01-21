@@ -1,0 +1,190 @@
+/*style globalne */
+
+a{
+  text-decoration: none !important;
+  color:inherit;
+}
+
+a:hover{
+
+  color: #6c757d;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
+section{
+  padding: 50px 0;
+}
+
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn{
+  border: none;
+  color: #6c757d;
+}
+
+.btn-bg{
+  color:#fff;
+  background: linear-gradient(to left, #03b803, #0a4f00);
+}
+.btn-bg:hover{
+  color:#fff;
+  background: linear-gradient(to right, #03b803, #0a4f00);
+}
+.btn-sort{
+  color:#6c7572 !important;
+  background: #fff;
+  border: 1px  solid;
+  border-color: #cdd4d2 !important;
+}
+.btn-sort:focus{
+  border-color: #fff !important;
+  box-shadow: 0 0 0 0;
+}
+.btn-sort:hover{
+  color:#575d62;
+  background: #fff;
+}
+
+.text-clipped{
+  padding: 1px;
+  background: linear-gradient(to bottom, #03b803, #0a4f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+.section-heading h1
+{
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+/*koniec styli globalnych */
+
+
+/*naglowek */
+.custom-nav-container
+{
+position:relative;
+z-index: 1;
+
+}
+.custom-nav-container i{
+    font-size:20px;
+    cursor:pointer;
+
+}
+
+.main-nav-outer{
+    width:250px;
+    height:100vh;
+    background-color:#fff;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    border-left: 5px solid #eee;
+    z-index: 1500;
+    transition: 650ms all;;
+}
+
+.main-nav-outer.open-menu{
+right:0;
+
+}
+.menu-close-icon{
+position: absolute;
+top:5px;
+left:10px;
+
+}
+
+.main-nav .nav-link
+{
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+.nav-icons-container{
+    width:100%;
+    max-width: 125px;
+}
+
+.custom-nav-container i{
+    font-size:20px;
+    cursor:pointer;
+
+}
+
+.nav-icons-container i:hover{
+    opacity: .7;
+}
+.navbar-brand i{
+    font-size: 40px;
+}
+
+.navbar-brand i span{
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.nav-icons >a {
+    position:relative;
+}
+.nav-icons > a > .badge{
+    position: absolute;
+    top: -10px;
+    right: -16px;
+    background-color: #919191;
+    color: #fff;
+    border-radius: 100%;
+}
+
+
+.nav-icons .dropdown-menu{
+margin-top: 40px;
+margin-left: -220px;
+position:relative;
+background-color: #fff;
+}
+.nav-icons .dropdown-menu::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border: inherit;
+    transform: rotate(45deg);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+
+}
+.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown-item
+{color: #333;
+
+}
+
+.promowane
+{
+    background-color: #333;
+    font-size: 14px;
+}
+
+
+
+/*koniec naglowka*/
