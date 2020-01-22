@@ -9,5 +9,5 @@ import { ApiService } from './services/api.service';
 export class AppComponent {
   title = 'megashop';
 
-  constructor(public menu: ApiService) { }
+  constructor(public data: ApiService) { }
 }
