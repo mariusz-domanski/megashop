@@ -1,1 +1,6 @@
-<p>article works!</p>
+<div *ngFor="let art of data.arts">
+  <div class="art" *ngIf="this.router.url === '/o-nas'">
+    <h1>{{ this.art.Title }}</h1>
+    <p>{{ this.art.Description }}</p>
+  </div>
+</div>

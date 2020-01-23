@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArticlesService } from '../../services/articles.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-article',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
-  constructor() { }
+  public href = '';
+  url = '';
+
+  constructor(public data: ArticlesService, public router: Router) { }
 
   ngOnInit() {
+    this.href = this.router.url;
+    console.log(this.router.url);
   }
 
 }
