@@ -7,13 +7,8 @@ import { BasketComponent } from './views/basket/basket.component';
 
 
 const routes: Routes = [
-  {path: 'soki-owocowe', component: ListComponent},
-  {path: 'soki-warzywne', component: ListComponent},
-  {path: 'soki-mieszane', component: ListComponent},
-  {path: 'o-nas', component: ArticleComponent},
-  {path: 'polityka-prywatnosci', component: ArticleComponent},
-  {path: 'cennik-dostaw', component: ArticleComponent},
-  {path: 'kontakt', component: ArticleComponent},
+  {path: 'produkty', component: ListComponent},
+  {path: 'article/:articleTitle', component: ArticleComponent},
   {path: 'koszyk', component: BasketComponent},
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: '**', component: HomeComponent}
