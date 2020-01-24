@@ -9,14 +9,19 @@ import { Router } from '@angular/router';
 })
 export class ArticleComponent implements OnInit {
 
-  public href = '';
-  url = '';
+  type: any;
+  description: any;
 
-  constructor(public data: ArticlesService, public router: Router) { }
+  constructor(public data: ArticlesService, private router: Router) { }
 
   ngOnInit() {
-    this.href = this.router.url;
-    console.log(this.router.url);
+    const data = history.state.data;
+    this.type = data['type'];
+    this.description = data['description'];
   }
 
+  getArticle(index) {
+    this.router.navigate(['/article/' + index], {state: {data: this.data.arts[index]}}
+  );
+  }
 }

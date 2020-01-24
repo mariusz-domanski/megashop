@@ -6,9 +6,9 @@
     <div class="main-nav d-flex">
       <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
       <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
-        <ul class="navbar-nav d-flex" *ngFor="let m of data.menu">
+        <ul class="navbar-nav d-flex" *ngFor="let m of data.menu; let i = index">
           <li class="nav-item">
-          <a class="nav-link" routerLink="{{ m.Link }}">{{ m.Name }}</a>
+          <a class="nav-link" routerLink="{{ m.Link }}" (click)="art.getArticle(i)">{{ m.Name }}</a>
           </li>
         </ul>
       </nav>

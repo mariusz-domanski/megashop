@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from './services/api.service';
+import { ArticleComponent } from './views/article/article.component';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,5 @@ import { ApiService } from './services/api.service';
 export class AppComponent {
   title = 'megashop';
 
-  constructor(public data: ApiService) { }
+  constructor(public data: ApiService, public art: ArticleComponent) { }
 }

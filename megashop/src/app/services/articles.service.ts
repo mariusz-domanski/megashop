@@ -27,9 +27,5 @@ export class ArticlesService {
     }
   ];
 
-  getArticle(link) {
-    //if(link === 'o-nas') {}
-  }
-
   constructor() { }
 }

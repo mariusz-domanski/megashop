@@ -10,10 +10,10 @@ export class ApiService {
     { Id : 2, Name : 'Soki owocowe', Link: 'soki-owocowe' },
     { Id : 3, Name : 'Soki warzywne', Link: 'soki-warzywne'},
     { Id : 4, Name : 'Soki mieszane', Link: 'soki-mieszane'},
-    { id : 5, Name : 'O nas', Link: 'o-nas'},
-    { id : 6, Name : 'Polityka prywatności', Link: 'polityka-prywatnosci'},
-    { id : 7, Name : 'Cennik dostaw', Link: 'cennik-dostaw'},
-    { id : 8, Name : 'Kontakt', Link: 'kontakt'}
+    { id : 5, Name : 'O nas', Link: 'article/o-nas'},
+    { id : 6, Name : 'Polityka prywatności', Link: 'article/polityka-prywatnosci'},
+    { id : 7, Name : 'Cennik dostaw', Link: 'article/cennik-dostaw'},
+    { id : 8, Name : 'Kontakt', Link: 'article/kontakt'}
   ];
 
   constructor() { }

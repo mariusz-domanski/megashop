@@ -8,7 +8,7 @@ import { BasketComponent } from './views/basket/basket.component';
 
 const routes: Routes = [
   {path: 'produkty', component: ListComponent},
-  {path: 'article/:articleTitle', component: ArticleComponent},
+  {path: 'article/:id', component: ArticleComponent},
   {path: 'koszyk', component: BasketComponent},
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: '**', component: HomeComponent}
