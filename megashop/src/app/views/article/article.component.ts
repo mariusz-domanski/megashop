@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticlesService } from '../../services/articles.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-article',
@@ -15,13 +15,10 @@ export class ArticleComponent implements OnInit {
   constructor(public data: ArticlesService, private router: Router) { }
 
   ngOnInit() {
-    const data = history.state.data;
-    this.type = data['type'];
-    this.description = data['description'];
   }
 
-  getArticle(index) {
-    this.router.navigate(['/article/' + index], {state: {data: this.data.arts[index]}}
+  getData() {
+    this.router.navigate(['o-nas'], {state: {relativeTo: this.router}}
   );
   }
 }

@@ -7,9 +7,16 @@ import { BasketComponent } from './views/basket/basket.component';
 
 
 const routes: Routes = [
-  {path: 'produkty', component: ListComponent},
-  {path: 'article/:id', component: ArticleComponent},
-  {path: 'koszyk', component: BasketComponent},
+  {
+    path: 'article/:id',
+    component: ArticleComponent,
+    children: [
+      { path: 'o-nas', component: ArticleComponent },
+      { path: 'polityka-prywatnosci', component: ArticleComponent },
+      { path: 'cennik-dostaw', component: ArticleComponent },
+      { path: 'kontakt', component: ArticleComponent }
+    ]
+  },
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: '**', component: HomeComponent}
 ];
